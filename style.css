@@ -1,0 +1,130 @@
+
+/*balises de titre*/
+
+h1{
+  text-align:center;
+  font-size: 50px;
+  }
+
+h2{
+  text-align:left;
+  margin-left: 10%;
+  font-size:40px;
+  }
+
+/*p {
+    text-align:left;
+    font-family: 'Cuprum', sans-serif;
+    font-size:20px;
+  }*/
+
+/*Paragraphes avec descriptif des missions effectuées*/
+
+p#mission {
+  text-align:justify;
+  margin-left:182.5px/*22%*/;
+  margin-top: 2%;
+  margin-bottom:2%;
+  margin-right: 15%;
+  padding-left: 5px;
+  border-left: solid;
+  border-color: black;
+  font-size:20px;
+  }
+
+
+
+/*paramétrage tableaux du panneau latéral gauche*/
+table#leftpanel {
+  text-align:left;
+  margin-left:10%;
+  margin-right:10%;
+  margin-top: 2%;
+  margin-bottom:2%;
+  font-size:20px;
+  }
+
+/*paramétrage tableaux descriptif des missions du panneau latéral droit*/
+table#mission {
+  text-align:left;
+  margin-left:5%;
+  margin-right:10%;
+  margin-top: 2%;
+  margin-bottom:2%;
+  font-size:25px;
+  }
+
+/*paramétrage tableaux descriptif des rubriques Expériences et Formations du panneau latéral droit*/
+
+table#title{
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size:40px;
+  }
+
+/*marge extérieur de 5% autour des cellules des tableaux*/
+td {
+  padding: 5px;
+  }
+
+
+html, body {
+  margin:0; /* This is used to reset any browser-default margins */
+}
+
+
+/*div englobante fixant la taille de la page web en pixels et la police à utiliser*/
+  div#container {
+    float:none;
+    width:1300px;
+    height:2800px;
+    font-family: 'Cuprum', sans-serif;
+    /*min-height:3600px;*/
+    }
+
+/*div du panneau latéral droit fixant sa couleur et sa position*/
+
+div#rightpanel {
+  float:right; /*cadre flottant sur la droite*/
+  width:65%;
+  height: 100%;
+  background-color:white;
+  }
+
+/*div du panneau latéral gauche fixant sa couleur et sa position, la couleur de la police (blanc)*/
+
+div#leftpanel {
+  float:left; /*czdre flottant sur la gauche*/
+  width:35%;
+  height: 100%;
+	background-color:#0040FF;
+  color:white;
+  }
+/*div de la citation*/
+div#citation {
+  float:inline-block; /*block flottant aligné en haut de page*/
+  width:80%;
+	height:3%;
+  background-color:#D8D8D8;
+  margin-left: 5%; /*marges intérieures*/
+  margin-right: 0%;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  padding: 10px;
+  border-width:1px;
+  border-style:solid;/*paramètrage de la bordure du cadre*/
+  border-color:black;
+  font-size:20px;
+  border-radius: 15px;/*arrondir les angles de la div*/
+  }
+
+div#anecdote{
+  text-align:justify;/*aligner le texte*/
+  width:80%;
+  height:4%;
+  background-color:#848484;
+  margin: 10%;
+  padding: 3%;
+  font-size:20px;
+  border-radius: 15px;
+  }
