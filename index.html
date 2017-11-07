@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/><!-- charset en utf8 pour la compatibilité des chaines de caractère,
+      name = viewport permet d'être mobile first, content fixe la taille de la fenêtre de la page égal à celle du navigateur-->
+    <link rel="stylesheet" href="style.css" /><!-- lien vers le css-->
+    <style>@import url('https://fonts.googleapis.com/css?family=Cuprum');</style><!--url pointant vers les polices de caractère utilisées -->
+    <title>Mehdi Lefeuvre</title>
+  </head>
+
+  <body>
+    <div id="container"> <!-- id ="" sert à appeler une classe ddéfinie dans le css-->
+        <div id="leftpanel">
+          <h1> Mehdi Lefeuvre</h1>
+
+<!--Photo et informations état civil et autre -->
+          <p style="text-align:center" ><img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/photo.jpeg" style ="border-radius: 15px"; ></p> <!--image incluse dans un
+          paragraphe pour pouvoir la centrer correctement, border-radius pour arrondir les angles de la photo -->
+          <p style="margin-left:10%"> <!-- marge intérieure de 10% avant le texte-->
+            <img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/ic_account_circle_white_24dp_1x.png">     31 ans <!--balise </br> renvoie à la ligne , insertion
+               d'un icone image en début de ligne-->
+            </br><img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/ic_email_white_24dp_1x.png">     mehdi.lefeuvre@gmail.com
+            </br><img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/ic_phone_iphone_white_24dp_1x.png">     06 88 71 14 34
+            </br><img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/ic_location_on_white_24dp_1x.png">     Gardouch - 31290
+            </br><img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/ic_directions_car_white_24dp_1x.png">     Permis B
+            </br><img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/ic_my_location_white_24dp_1x.png">     Poste recherché en région Occitanie
+          </p>
+
+<!-- partie Compétences -->
+          <h2> <img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/ic_settings_white_24dp_2x.png">     Compétences </h2>
+            <table id="leftpanel">
+              <tr> <!-- -->balise tr = table row
+                <td><b>SIG : </b> ArcGis, Mapinfo, QGIS, FME, GRASS GIS, GeoServer, eCognition, Envi, <!--balise <b> permet de mettre en gras, balise <td> correspond à
+                une cellule du tableau (table data)-->
+                  Idrisi, FRAGSTATS, PostGIS, PostgreSQL </td>
+              </tr>
+              <tr>
+                <tr>
+                  <td><b>Informatique : </b> Linux (Dedian, ubuntu, Raspbian), Windows (XP, 7, 10) </td>
+                </tr>
+                <tr>
+               <td><b>Géomatique : </b> Analyse de données, Traitement d’images, Calcul d’indicateurs statistiques,
+                 biophysiques et paysagers, Sémiologie graphique, Edition cartographique, Webmapping,
+                 Algorithmie, Bases de données</td>
+              </tr>
+              <tr>
+                <td><b>Écologie, environnement : </b> Écologie du paysage, Pédologie, Dynamique des populations, Fonctionnement des
+                  écosystèmes, Bio-statistiques, Phytopathologie, Botanique, Agro-écologie. </td>
+              </tr>
+              <tr>
+                <td><b>Langues :</b> Anglais (fluide), Espagnol niveau BAC, Portugais (débutant).  </td>
+              </tr>
+              <tr>
+                <td><b>Personnelles : </b> Goût du travail en équipe, Organisé, Autonome, Responsable, Bon relationnel  </td>
+              </tr>
+              <tr>
+                <td><b>Langages de programmation : </b> R, Python, HTML, CSS  </td>
+              </tr>
+            </table>
+
+<!-- Partie Centres d'intérêt-->
+
+        <h2> <img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/ic_thumb_up_white_24dp_2x.png"> Centres d'intérêt </h2>
+        <table id="leftpanel">
+          <tr>
+            <td>Sorties nature, Randonnées</td>
+          </tr>
+          <tr>
+           <td>Jardinage potager</td>
+          </tr>
+          <tr>
+            <td>Cyclotourisme </td>
+          </tr>
+          <tr>
+            <td>Jeux de société, jeux vidéos </td>
+          </tr>
+          <tr>
+            <td>Musique : Hip Hop, Electro, Jazz, Reggae, Nouvelle scène française, chanson française </td>
+          </tr>
+          <tr>
+            <td>Cinéma : Sci-Fi, Fantastique, Thriller, Polars, Animation </td>
+          </tr>
+          <tr>
+            <td>Bande dessinée : Universal WAR I & II (Denis Bajram), Moebius, joann sfar, Manu Larcenet </td>
+          </tr>
+          <tr>
+            <td>Auteurs : Isaac Asimov, J.R.R Tolkien, Alain Damasio </td>
+          </tr>
+          <tr>
+            <td>Technologie numérique : Raspberry Pi, Application mobiles  </td>
+          </tr>
+          <tr>
+            <td>Astronomie, Technologie du spatial  </td>
+          </tr>
+        </table>
+
+
+<!-- Cadre avec anecdote -->
+
+      <div id="anecdote">
+
+      <table  >
+        <tr>
+          <td>Saviez-vous qu'en tapant "Zerg Rush" dans Google
+        une myriade de "O" apparaît et grignote vos résultats de recherche?
+        Cliquez-dessus pour tenter de la sauver!</td>
+        </tr>
+      </table>
+      </div>
+
+
+
+    </div>
+
+
+
+
+<!--titre du CV, poste recherché -->
+
+
+      <div id="rightpanel">
+        <h1> Développeur Web</h1>
+
+<!-- -->
+        <div id="citation">
+
+          <table >
+            <tr>
+              <td colspan="2" style="text-align:left" > Le monde ne sera pas détruit par ceux qui font <!-- colspan permet d'étendre la largeur de colonne sur la cellule
+              voisine-->
+              le mal mais par ceux qui les regardent sans rien faire.</td>
+              <td> </td>
+            </tr>
+
+            <tr>
+              <td colspan="2" style="text-align:right">
+                <em> <i>Albert Einstein</i> </em> <!-- balise em pour l'emphase -->
+              </td>
+              <td>
+              </td>
+            </tr>
+          </table>
+        </p>
+        </div>
+
+<!-- -->
+        <table id="title">
+          <tr>
+            <td width="110px" style="text-align:center "  > <img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/ic_business_center_black_24dp_2x.png"> </td> <!-- marges
+            fixes pour garder l'alignement des points avec la bordure gauche du cadre du paragraphe (défini dans le css)-->
+            <td> Expériences </td>
+          </tr>
+        </table>
+
+          <table id="mission">
+            <tr>
+              <td width="115px">2016 - 2017 </td>
+              <td width="5px"><img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/filled_circle1600.png" width="15px" height="15px"></td> <!-- insertion d'une image
+              dans une cellule du tableau pour garder tous les points alignés entre eux -->
+              <td > Support Technique sur plateforme web (GeoStore)</td><!-- -->
+              <!--inserer une troisieme colone et y mettre le point.png, fixer les tailles de cellules en %-->
+            </tr>
+          </table>
+
+          <p id="mission">  <b>Airbus Defense & Space </b>
+          </br> <i>Facilitateur entre les différents services (service client,
+            programmation satellite, développement logiciel,  responsables techniques,
+            ventes, marketing) ; Qualification opérationnelle des portails web; Reporting de bugs ; Spécification des demandes de
+            développement ; Rédaction des news, guides utilisateurs, FAQs; Veille concurrentielle ;
+            Formation et promotion des produits GeoStore et One Atlas (Rome, Lyon, Toulouse).</i> <!-- balise i permet de mettr een italique-->
+          </p>
+          <table id="mission">
+            <tr>
+              <td width="115px">2015 - 2016 </td>
+              <td width="5px"><img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/filled_circle1600.png" width="15px" height="15px"></td>
+              <td> Ingénieur développement agricole et forestier</td>
+            </tr>
+          </table>
+
+          <p id="mission"> <b>Airbus Defense & Space </b>
+          </br> <i>Développement de solutions logicielles ; Mise en place d’algorithmes de détection d’objets fins
+            en forêt tropicale ; Traitement d’image multi-capteurs et de MNT/ MNE (Pléaides, SPOT, Landsat, Formosat, DMC, Deimos,
+            Quickbird) ; Calculs d’indices biophysiques ; Alpha testing de logiciels; Dénuagement et validation de parcelles
+            agricoles ; Point de contact interne sur les questions ESRI.</i>
+          </p>
+        </p>
+
+        <table id="mission">
+          <tr>
+            <td width="115px">2013 - 2015</td>
+            <td width="5px"><img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/filled_circle1600.png" width="15px" height="15px"></td>
+            <td > Expert SIG - gestion des risques naturels (projet IncREO)</td>
+          </tr>
+        </table>
+
+        <p id="mission"> <b>Airbus Defense & Space </b>
+        </br> <i>Création et Gestion de bases de données; Développement d’un
+          outil d’analyse routier générant des itinéraires d’évacuation d’urgence ;
+          Développement d’un simulateur de séisme et de glissements de terrain (Domino Effect ) ; Analyse
+          multi-risques ; Formation des utilisateurs aux outils (Pays-Bas,
+          Italie, Allemagne) ; Mise en place et gestion d’un Web Atlas sous
+          Geoserver ; Rédaction d’articles scientifiques et de documentation
+          technique en anglais.</i>
+        </p>
+
+        <table id="mission">
+          <tr>
+            <td width="115px">2012 - 2013</td>
+            <td width="5px"><img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/filled_circle1600.png" width="15px" height="15px"></td>
+            <td> Technicien de production en cartographie forestière</td>
+          </tr>
+        </table>
+
+        <p id="mission"> <b>Airbus Defense & Space </b>
+        </br> <i>Cartographie de la Forêt Tropicale Humide du bassin du Congo ;
+          Analyse historique des changements sur 30 ans (distinction
+          déforestation / régénération) ; Mosaïquage des classifications supervisées par régions
+          administratives ; Calcul d'indicateurs et de plans biophysiques.</i>
+        </p>
+<!-- -->
+        <table id="title">
+          <tr>
+            <td width="110px" style="text-align:center "><img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/ic_school_black_24dp_2x.png"></td>
+            <td> Formations et stages</td>
+          </tr>
+        </table>
+
+        <table id="mission">
+          <tr>
+            <td width="115px">2012 <!--&nbsp insertion espace insécable--> </td>
+            <td width="5px"><img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/filled_circle1600.png" width="15px" height="15px"></td>
+            <td > Stage de chargé d'étude SIG Environnement et Territoire</td>
+          </tr>
+        </table>
+
+        <p id="mission"> <b>Agence d'Urbanisme de Toulouse </b>
+        </br> <i>Analyse des potentialités écologiques du Schéma de Cohérence Territorial (SCoT) de la Grande
+          Agglomération Toulousaine (GAT) ; Calculs d'indices paysagers ; Classifications supervisées
+           ; Gestion de bases de données ; Traitement de données géospatiales.</i>
+        </p>
+
+        <table id="mission">
+          <tr>
+            <td width="115px">2011 - 2012 </td>
+            <td width="5px"><img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/filled_circle1600.png" width="15px" height="15px"></td>
+            <td> Master 2 - Aménagement du Territoire et Télédétection</td>
+          </tr>
+        </table>
+
+        <p id="mission"> <b>Univesité Paul Sabatier - Toulouse III </b>
+        </br> <i>Traitement d’images et Application des Technologies
+          Spatiales ; Gestion et Aménagement des Agrosystèmes ; Écologie appliquée aux agrosystèmes ;
+          Écologie des milieux terrestre et aquatique ; Ethnobotanique ; Systématique des plantes ; Physiologie
+          végétale ; Écologie du paysage ; Traitement et interprétation des données biologiques ; Inventaires naturalistes.</i>
+        </p>
+
+
+        <table id="mission">
+          <tr>
+            <td width="115px"> 2010 - 2011 </td>
+            <td width="5px"><img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/filled_circle1600.png" width="15px" height="15px"></td>
+            <td > Chargé d'étude SIG Agriculture Foresterie (stage R&D)</td>
+          </tr>
+        </table>
+
+        <p id="mission"> <b>Centre d’Etudes Spatial de la Biosphère (CESBIO)</b>
+        </br> <i>Télédétection appliquée au suivi de parcelles forestières ; Validation de modèles
+          biophysiques appliqués à l’irrigation ; Collecte et traitement de données spatiales ; Digitalisation de plans et édition de cartes
+           d'occupation des sols ; Beta-test d’une plateforme de saisie des itinéraires techniques agricoles.</i>
+        </p>
+
+        <table id="mission">
+          <tr>
+            <td width="115px">2009 - 2010</td>
+            <td width="5px"><img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/filled_circle1600.png" width="15px" height="15px"></td>
+            <td > Master 1 sciences, mention Écologie</td>
+          </tr>
+        </table>
+
+        <p id="mission"> <b>Univesité Paul Sabatier - Toulouse III </b>
+        </br> <i>Analyse, traitement et interprétation de données en écologie ; Génétique et
+          Dynamique des populations ; Fonctionnement des écosystèmes aquatiques continentaux ;
+          Comportement Animal ; Programmation et outils mathématiques appliqués à l’écologie Bio-statistiques ;
+          Systèmes d'Information Géographiques (SIG) ; Communautés végétales du Sud de l’Europe ; Phytosociologie ;
+          Phytopathologie ; Botanique ; Droit de l'environnement ; Pédologie.</i>
+        </p>
+
+        <table id="mission">
+          <tr>
+            <td width="115px">2006 - 2009</td>
+            <td width="5px"><img src="/home/k0d3/Documents/Prairie/CV/CV_MLefeuvre/filled_circle1600.png" width="15px" height="15px"></td>
+            <td > Licence 3,  Biologie des Populations et Écosystèmes</td>
+          </tr>
+        </table>
+
+        <p id="mission"> <b>Univesité Paul Sabatier - Toulouse III </b>
+        </br> <i>Classification et identification des métazoaires ; Biologie des végétaux ; Systématique
+          des plantes ; Physiologie végétale ; Paléontologie-Géologie ; Traitement des données biologiques -
+          méthodologie expérimentale ; Biologie cellulaire ; Génétique – Microbiologie ; Biologie moléculaire -
+          Biologie du Développement ; Biologie Evolutive ; Biochimie des substances naturelles ; Symbiose et
+          parasitisme chez les végétaux ; Ecologie appliquée à la conduite des agrosystèmes ; Agriculture et
+          environnement ; Sols et plantes cultivées ; Territoires filière agricole et qualité des produits.</i>
+        </p>
+<!-- -->
+        </div>
+      </div>
+
+
+
+  </body>
+</html>
