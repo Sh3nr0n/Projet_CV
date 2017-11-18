@@ -4,34 +4,35 @@
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/><!-- charset en utf8 pour la compatibilité des chaines de caractère,
       name = viewport permet d'être mobile first, content fixe la taille de la fenêtre de la page égal à celle du navigateur-->
     <link rel="stylesheet" href="style.css" /><!-- lien vers le css-->
-    <style>@import url('https://fonts.googleapis.com/css?family=Cuprum');</style><!--url pointant vers les polices de caractère utilisées -->
+    <style>@import url('https://fonts.googleapis.com/css?family=Cuprum'); </style><!--url pointant vers les polices de caractère utilisées -->
     <title>Mehdi Lefeuvre</title>
   </head>
 
   <body>
-    <div id="container"> <!-- id ="" sert à appeler une classe ddéfinie dans le css-->
+    <div id="container"> <!-- id ="" sert à appeler un id unique définie dans le css != d'une classe -->
         <div id="leftpanel">
           <h1> Mehdi Lefeuvre</h1>
 
 <!--Photo et informations état civil et autre -->
-          <p style="text-align:center" ><img src="photo.jpeg" style ="border-radius: 15px" width="153" height="204";></p> <!--image incluse dans un
-          paragraphe pour pouvoir la centrer correctement, border-radius pour arrondir les angles de la photo -->
-          <p style="margin-left:10%"> <!-- marge intérieure de 10% avant le texte-->
-            <img src="ic_account_circle_white_24dp_1x.png">     31 ans <!--balise </br> renvoie à la ligne , insertion
-               d'un icone image en début de ligne-->
-            </br><img src="ic_email_white_24dp_1x.png">     mehdi.lefeuvre@gmail.com
-            </br><img src="ic_phone_iphone_white_24dp_1x.png">     06 88 71 14 34
-            </br><img src="ic_location_on_white_24dp_1x.png">     Gardouch - 31290
-            </br><img src="ic_directions_car_white_24dp_1x.png">     Permis B
-            </br><img src="ic_my_location_white_24dp_1x.png">     Poste recherché en région Occitanie
+          <p  ><img id=img1 src="img/photo.jpeg" ></p> <!--image incluse dans un paragraphe pour pouvoir la centrer 
+                                                      correctement, border-radius pour arrondir les angles de la photo -->
+          <p id="info" >
+            <img src="img/ic_account_circle_white_24dp_1x.png">     31 ans <!--balise <br /> renvoie à la ligne , insertion
+                                                                              d'un icone image en début de ligne-->
+            <br /><img src="img/ic_email_white_24dp_1x.png">     mehdi.lefeuvre@gmail.com
+            <br /><img src="img/ic_phone_iphone_white_24dp_1x.png">     06 88 71 14 34
+            <br /><img src="img/ic_location_on_white_24dp_1x.png">     Gardouch - 31290
+            <br /><img src="img/ic_directions_car_white_24dp_1x.png">     Permis B
+            <br /><img src="img/ic_my_location_white_24dp_1x.png">     Poste recherché en région Occitanie
           </p>
 
 <!-- partie Compétences -->
-          <h2> <ic_settings_white_24dp_2x.png">     Compétences </h2>
-            <table id="leftpanel">
+          <h2 class = "gauche" > <img src="img/ic_settings_white_24dp_2x.png">     Compétences </h2>
+            <table class="leftpanel">
               <tr> <!--balise tr = table row -->
-                <td><b>SIG : </b> ArcGis, Mapinfo, QGIS, FME, GRASS GIS, GeoServer, eCognition, Envi, <!--balise <b> permet de mettre en gras, balise <td> correspond à
-                une cellule du tableau (table data)-->
+                <td><b>SIG : </b> ArcGis, Mapinfo, QGIS, FME, GRASS GIS, GeoServer, eCognition, Envi, <!--balise <b> permet de mettre en gras, 
+                                                                                                      balise <td> correspond à une cellule du 
+                                                                                                      tableau (table data)-->
                   Idrisi, FRAGSTATS, PostGIS, PostgreSQL </td>
               </tr>
               <tr>
@@ -60,8 +61,8 @@
 
 <!-- Partie Centres d'intérêt-->
 
-        <h2> <img src="ic_thumb_up_white_24dp_2x.png"> Centres d'intérêt </h2>
-        <table id="leftpanel">
+        <h2 class = "gauche"> <img src="img/ic_thumb_up_white_24dp_2x.png"> Centres d'intérêt </h2>
+        <table class="leftpanel">
           <tr>
             <td>Sorties nature, Randonnées</td>
           </tr>
@@ -126,17 +127,12 @@
 
           <table >
             <tr>
-              <td colspan="2" style="text-align:left" > Le monde ne sera pas détruit par ceux qui font <!-- colspan permet d'étendre la largeur de colonne sur la cellule
-              voisine-->
+              <td id="emc2" > Le monde ne sera pas détruit par ceux qui font 
               le mal mais par ceux qui les regardent sans rien faire.</td>
-              <td> </td>
             </tr>
-
             <tr>
-              <td colspan="2" style="text-align:right">
-                <em> <i>Albert Einstein</i> </em> <!-- balise em pour l'emphase -->
-              </td>
-              <td>
+              <td id="auteur">
+                  <em> Albert Einstein </em>  <!-- balise em pour l'emphase -->
               </td>
             </tr>
           </table>
@@ -144,57 +140,56 @@
         </div>
 
 <!-- -->
-        <table id="title">
+        <table class="title">
           <tr>
-            <td width="110px" style="text-align:center "  > <img src="ic_business_center_black_24dp_2x.png"> </td> <!-- marges
+            <td class="icon" > <img src="img/ic_business_center_black_24dp_2x.png"> </td> <!-- marges
             fixes pour garder l'alignement des points avec la bordure gauche du cadre du paragraphe (défini dans le css)-->
-            <td> Expériences </td>
+            <td> <h2>Expériences</h2> </td>
           </tr>
         </table>
 
-          <table id="mission">
+          <table class="mission">
             <tr>
-              <td width="115px">2016 - 2017 </td>
-              <td width="5px"><img src="filled_circle1600.png" width="15px" height="15px"></td> <!-- insertion d'une image
-              dans une cellule du tableau pour garder tous les points alignés entre eux -->
+              <td class="td1">2016 - 2017 </td>
+              <td class="td2"><img class = "circle" src="img/filled_circle1600.png" ></td> <!-- insertion d'une image
+              dans une cellule du tableau pour créer des points alignés entre eux -->
               <td > Support Technique sur plateforme web (GeoStore)</td><!-- -->
-              <!--inserer une troisieme colone et y mettre le point.png, fixer les tailles de cellules en %-->
             </tr>
           </table>
 
-          <p id="mission">  <b>Airbus Defense & Space </b>
-          </br> <i>Facilitateur entre les différents services (service client,
+          <p class="mission">  <strong>Airbus Defense & Space </strong>
+          <br /> <i>Facilitateur entre les différents services (service client,
             programmation satellite, développement logiciel,  responsables techniques,
             ventes, marketing) ; Qualification opérationnelle des portails web; Reporting de bugs ; Spécification des demandes de
             développement ; Rédaction des news, guides utilisateurs, FAQs; Veille concurrentielle ;
             Formation et promotion des produits GeoStore et One Atlas (Rome, Lyon, Toulouse).</i> <!-- balise i permet de mettr een italique-->
           </p>
-          <table id="mission">
+          <table class="mission">
             <tr>
-              <td width="115px">2015 - 2016 </td>
-              <td width="5px"><img src="filled_circle1600.png" width="15px" height="15px"></td>
+              <td class="td1">2015 - 2016 </td>
+              <td class="td2"><img class = "circle" src="img/filled_circle1600.png" ></td>
               <td> Ingénieur développement agricole et forestier</td>
             </tr>
           </table>
 
-          <p id="mission"> <b>Airbus Defense & Space </b>
-          </br> <i>Développement de solutions logicielles ; Mise en place d’algorithmes de détection d’objets fins
+          <p class="mission"> <strong>Airbus Defense & Space </strong>
+          <br /> <i>Développement de solutions logicielles ; Mise en place d’algorithmes de détection d’objets fins
             en forêt tropicale ; Traitement d’image multi-capteurs et de MNT/ MNE (Pléaides, SPOT, Landsat, Formosat, DMC, Deimos,
             Quickbird) ; Calculs d’indices biophysiques ; Alpha testing de logiciels; Dénuagement et validation de parcelles
             agricoles ; Point de contact interne sur les questions ESRI.</i>
           </p>
         </p>
 
-        <table id="mission">
+        <table class="mission">
           <tr>
-            <td width="115px">2013 - 2015</td>
-            <td width="5px"><img src="filled_circle1600.png" width="15px" height="15px"></td>
+            <td class="td1">2013 - 2015</td>
+            <td class="td2"><img class = "circle"  src="img/filled_circle1600.png" ></td>
             <td > Expert SIG - gestion des risques naturels (projet IncREO)</td>
           </tr>
         </table>
 
-        <p id="mission"> <b>Airbus Defense & Space </b>
-        </br> <i>Création et Gestion de bases de données; Développement d’un
+        <p class="mission"> <strong>Airbus Defense & Space </strong>
+        <br /> <i>Création et Gestion de bases de données; Développement d’un
           outil d’analyse routier générant des itinéraires d’évacuation d’urgence ;
           Développement d’un simulateur de séisme et de glissements de terrain (Domino Effect ) ; Analyse
           multi-risques ; Formation des utilisateurs aux outils (Pays-Bas,
@@ -203,105 +198,104 @@
           technique en anglais.</i>
         </p>
 
-        <table id="mission">
+        <table class="mission">
           <tr>
-            <td width="115px">2012 - 2013</td>
-            <td width="5px"><img src="filled_circle1600.png" width="15px" height="15px"></td>
+            <td class="td1">2012 - 2013</td>
+            <td class="td2"><img class = "circle"  src="img/filled_circle1600.png" ></td>
             <td> Technicien de production en cartographie forestière</td>
           </tr>
         </table>
 
-        <p id="mission"> <b>Airbus Defense & Space </b>
-        </br> <i>Cartographie de la Forêt Tropicale Humide du bassin du Congo ;
+        <p class="mission"> <strong>Airbus Defense & Space </strong>
+        <br /> <i>Cartographie de la Forêt Tropicale Humide du bassin du Congo ;
           Analyse historique des changements sur 30 ans (distinction
           déforestation / régénération) ; Mosaïquage des classifications supervisées par régions
           administratives ; Calcul d'indicateurs et de plans biophysiques.</i>
         </p>
 <!-- -->
-        <table id="title">
+        <table class="title">
           <tr>
-            <td width="110px" style="text-align:center "><img src="ic_school_black_24dp_2x.png"></td>
-            <td> Formations et stages</td>
+            <td class="icon"><img src="img/ic_school_black_24dp_2x.png"></td>
+            <td> <h2>Formations et stages</h2></td>
           </tr>
         </table>
 
-        <table id="mission">
+        <table class="mission">
           <tr>
-            <td width="115px">2012 <!--&nbsp insertion espace insécable--> </td>
-            <td width="5px"><img src="filled_circle1600.png" width="15px" height="15px"></td>
+            <td class="td1">2012 </td>
+            <td class="td2"><img class = "circle" src="img/filled_circle1600.png" ></td>
             <td > Stage de chargé d'étude SIG Environnement et Territoire</td>
           </tr>
         </table>
 
-        <p id="mission"> <b>Agence d'Urbanisme de Toulouse </b>
-        </br> <i>Analyse des potentialités écologiques du Schéma de Cohérence Territorial (SCoT) de la Grande
+        <p class="mission"> <strong>Agence d'Urbanisme de Toulouse </strong>
+        <br /> <i>Analyse des potentialités écologiques du Schéma de Cohérence Territorial (SCoT) de la Grande
           Agglomération Toulousaine (GAT) ; Calculs d'indices paysagers ; Classifications supervisées
            ; Gestion de bases de données ; Traitement de données géospatiales.</i>
         </p>
 
-        <table id="mission">
+        <table class="mission">
           <tr>
-            <td width="115px">2011 - 2012 </td>
-            <td width="5px"><img src="filled_circle1600.png" width="15px" height="15px"></td>
+            <td class="td1">2011 - 2012 </td>
+            <td class="td2"><img class = "circle"  src="img/filled_circle1600.png" ></td>
             <td> Master 2 - Aménagement du Territoire et Télédétection</td>
           </tr>
         </table>
 
-        <p id="mission"> <b>Univesité Paul Sabatier - Toulouse III </b>
-        </br> <i>Traitement d’images et Application des Technologies
+        <p class="mission"> <strong>Univesité Paul Sabatier - Toulouse III </strong>
+        <br /> <i>Traitement d’images et Application des Technologies
           Spatiales ; Gestion et Aménagement des Agrosystèmes ; Écologie appliquée aux agrosystèmes ;
           Écologie des milieux terrestre et aquatique ; Ethnobotanique ; Systématique des plantes ; Physiologie
           végétale ; Écologie du paysage ; Traitement et interprétation des données biologiques ; Inventaires naturalistes.</i>
         </p>
 
 
-        <table id="mission">
+        <table class="mission">
           <tr>
-            <td width="115px"> 2010 - 2011 </td>
-            <td width="5px"><img src="filled_circle1600.png" width="15px" height="15px"></td>
+            <td class="td1"> 2010 - 2011 </td>
+            <td class="td2"><img class = "circle"  src="img/filled_circle1600.png" ></td>
             <td > Chargé d'étude SIG Agriculture Foresterie (stage R&D)</td>
           </tr>
         </table>
 
-        <p id="mission"> <b>Centre d’Etudes Spatial de la Biosphère (CESBIO)</b>
-        </br> <i>Télédétection appliquée au suivi de parcelles forestières ; Validation de modèles
+        <p class="mission"> <strong>Centre d’Etudes Spatial de la Biosphère (CESBIO)</strong>
+        <br /> <i>Télédétection appliquée au suivi de parcelles forestières ; Validation de modèles
           biophysiques appliqués à l’irrigation ; Collecte et traitement de données spatiales ; Digitalisation de plans et édition de cartes
            d'occupation des sols ; Beta-test d’une plateforme de saisie des itinéraires techniques agricoles.</i>
         </p>
 
-        <table id="mission">
+        <table class="mission">
           <tr>
-            <td width="115px">2009 - 2010</td>
-            <td width="5px"><img src="filled_circle1600.png" width="15px" height="15px"></td>
+            <td class="td1">2009 - 2010</td>
+            <td class="td2"><img class = "circle"  src="img/filled_circle1600.png" ></td>
             <td > Master 1 sciences, mention Écologie</td>
           </tr>
         </table>
 
-        <p id="mission"> <b>Univesité Paul Sabatier - Toulouse III </b>
-        </br> <i>Analyse, traitement et interprétation de données en écologie ; Génétique et
+        <p class="mission"> <strong>Univesité Paul Sabatier - Toulouse III </strong>
+        <br /> <i>Analyse, traitement et interprétation de données en écologie ; Génétique et
           Dynamique des populations ; Fonctionnement des écosystèmes aquatiques continentaux ;
           Comportement Animal ; Programmation et outils mathématiques appliqués à l’écologie Bio-statistiques ;
           Systèmes d'Information Géographiques (SIG) ; Communautés végétales du Sud de l’Europe ; Phytosociologie ;
           Phytopathologie ; Botanique ; Droit de l'environnement ; Pédologie.</i>
         </p>
 
-        <table id="mission">
+        <table class="mission">
           <tr>
-            <td width="115px">2006 - 2009</td>
-            <td width="5px"><img src="filled_circle1600.png" width="15px" height="15px"></td>
+            <td class="td1">2006 - 2009</td>
+            <td class="td2"><img class = "circle" src="img/filled_circle1600.png" ></td>
             <td > Licence 3,  Biologie des Populations et Écosystèmes</td>
           </tr>
         </table>
 
-        <p id="mission"> <b>Univesité Paul Sabatier - Toulouse III </b>
-        </br> <i>Classification et identification des métazoaires ; Biologie des végétaux ; Systématique
+        <p class="mission"> <strong>Univesité Paul Sabatier - Toulouse III </strong>
+        <br /> <i>Classification et identification des métazoaires ; Biologie des végétaux ; Systématique
           des plantes ; Physiologie végétale ; Paléontologie-Géologie ; Traitement des données biologiques -
           méthodologie expérimentale ; Biologie cellulaire ; Génétique – Microbiologie ; Biologie moléculaire -
           Biologie du Développement ; Biologie Evolutive ; Biochimie des substances naturelles ; Symbiose et
           parasitisme chez les végétaux ; Ecologie appliquée à la conduite des agrosystèmes ; Agriculture et
           environnement ; Sols et plantes cultivées ; Territoires filière agricole et qualité des produits.</i>
         </p>
-<!-- -->
         </div>
       </div>
 

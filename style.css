@@ -1,3 +1,6 @@
+html, body {
+  margin:0; /* Remet à 0 les marges par defaut des navigateurs */
+}
 
 /*balises de titre*/
 
@@ -7,20 +10,39 @@ h1{
   }
 
 h2{
+font-size: 40px;
+
+
+/*Alignement à gauche des titres du panneau gauche*/
+}
+.gauche{
   text-align:left;
   margin-left: 10%;
   font-size:40px;
-  }
 
-/*p {
-    text-align:left;
-    font-family: 'Cuprum', sans-serif;
-    font-size:20px;
-  }*/
+}
+
+
+/*Paramètres de la photo*/
+#img1 {
+  border-radius: 15px;
+  width: 203px;
+  height: 254px;
+  display: block;
+  margin-left: auto;/*margin left et right definis sur auto permet de centrer l'image dans la div*/
+  margin-right: auto;
+}
+
+
+/*Paramétrage icone cercle des tableaux*/
+.circle {
+  width: 15px;
+  height: 15px;
+}
 
 /*Paragraphes avec descriptif des missions effectuées*/
 
-p#mission {
+p.mission {
   text-align:justify;
   margin-left:182.5px/*22%*/;
   margin-top: 2%;
@@ -32,10 +54,13 @@ p#mission {
   font-size:20px;
   }
 
-
+  /*marge de 10% sur infos état civil*/
+#info {
+  margin-left: 10%;
+}
 
 /*paramétrage tableaux du panneau latéral gauche*/
-table#leftpanel {
+.leftpanel {
   text-align:left;
   margin-left:10%;
   margin-right:10%;
@@ -45,7 +70,7 @@ table#leftpanel {
   }
 
 /*paramétrage tableaux descriptif des missions du panneau latéral droit*/
-table#mission {
+table.mission {
   text-align:left;
   margin-left:5%;
   margin-right:10%;
@@ -56,7 +81,7 @@ table#mission {
 
 /*paramétrage tableaux descriptif des rubriques Expériences et Formations du panneau latéral droit*/
 
-table#title{
+table.title{
   padding-left: 5%;
   padding-right: 5%;
   font-size:40px;
@@ -67,20 +92,44 @@ td {
   padding: 5px;
   }
 
+  /*einstein aligné à droite*/
+td#auteur{
+text-align: right;
 
-html, body {
-  margin:0; /* This is used to reset any browser-default margins */
+ 
+/*citation alignée à droite*/
+}
+td#emc2 {
+  text-align: left;
 }
 
 
+  /*marges fixes sur les deux premières colonnes des tableaux pour garder les bordures alignées avec les cercles*/
+
+.td1{
+  width:115px;
+}
+
+.td2{
+  width:5px;
+}
+
+/*paramètres des icones pour les titres en h2*/
+.icon{
+  width:110px;
+  text-align:center;
+
+}
+
 /*div englobante fixant la taille de la page web en pixels et la police à utiliser*/
   div#container {
-    float:none;
+    margin-left: auto; /*margin left et right definis sur auto permet de centrer le contenu de la div sur la page*/
+    margin-right:auto;
     width:1300px;
-    height:2800px;
+    height:2900px;
     font-family: 'Cuprum', sans-serif;
-    /*min-height:3600px;*/
-    }
+
+  }
 
 /*div du panneau latéral droit fixant sa couleur et sa position*/
 
